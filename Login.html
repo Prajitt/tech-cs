@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style type="text/css">
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+        body{
+            background-color : red;
+            background-size: cover;
+        }
+
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 1%;
+    right: 9%;
+    
+}
+.hello{
+    position: fixed;
+    height: auto;
+    top: 11px;
+    left: 18px;
+    width: 60px;
+}
+.menu{
+width: 65%;
+display: flex;
+justify-content: right;
+
+list-style: none;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li a{
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.menu li a:hover{
+    color: rgb(197, 8, 8);
+}
+.menu ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 3px;
+    margin-bottom: -2px;
+    background: linear-gradient(to right, #855555,#65d555);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transfrom 0.4s ease-in-out;
+}
+.menu ul li a:hover::before{
+     transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.login{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    min-height: 50vh;
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    place-items: right;
+}
+
+.login{
+    width: 350px;
+    background: transparent;
+    
+    backdrop-filter: blur(15px);
+   
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 15px;
+}
+
+.login h1{
+    font-size: 36px;
+    text-align: center;
+}
+ 
+.login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255,.2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+
+}
+
+.login.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: -15px 0px 15px;
+
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin: 3px;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0px 15px;
+}
+
+.register-link p1 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p1 a :hover{
+    text-decoration: underline;
+}
+.paragraph{
+    text-align: center;
+position: fixed;
+height: auto;
+   top: 260px;
+   left: 100px;
+   font-size: 36px;
+   color: #ffffff;
+
+    
+}
+        </style>
+    <link rel="stylesheet" href="s.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="container" ><img src="logo4.jpeg" class="hello"></div>
+        <ul class="menu">
+            <li><a href=""><b>Home</b></a></li>
+            <li><a href=""><b>About</b></a></li>
+            <li><a href=""><b>Services</b></a></li>
+            <li><a href=""><b>Contact</b></a></li>
+        </ul>
+       
+    </nav>
+    <div class="login">
+        <form>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder=" username / e-mail">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder=" password">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot"> 
+            <label><input type="checkbox">Remember me</label>
+            <a href="">    <u>   Forget password? </u></a>
+            </div>
+            <br>
+            
+            <button type="submit " class="btn">Login</button>
+            <div class="register-link">
+                <p1>Don't have an account
+              <a href="h.html"> Sign in</a>
+                </p1>
+            </div>
+        </form>
+    </div>
+    <div class="paragraph">
+        <p>
+            <b>WELCOME!<br>To our world of Computer <br>Science & Technology  </b>
+        </p>
+    </div>
+</body>
+</html>
